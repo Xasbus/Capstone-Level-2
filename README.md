@@ -9,3 +9,8 @@ gh auth login
 git config user.name "Xasbus"
 git config user.email "davidbilliot0828.gmail.com"
 git push -u origin main
+
+git commit -m "updated README.md"
+git push origin main
+
+git add .
