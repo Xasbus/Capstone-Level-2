@@ -13,4 +13,11 @@ git push -u origin main
 git commit -m "updated README.md"
 git push origin main
 
+//save to all files
 git add .
+
+//View the value of origin
+git remote -v
+
+//how to change the origin
+git remote set-url origin https://github.com/Anything-I-Want
