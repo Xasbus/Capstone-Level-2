@@ -27,3 +27,6 @@ git init
 
 // technique to see what verison is installed
 git --version
+
+//It renames the current branch to main
+git branch -M main
