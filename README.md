@@ -30,3 +30,9 @@ git --version
 
 //It renames the current branch to main
 git branch -M main
+
+//default origin and branch was already set. So it will defer to default
+git push
+
+//
+git pull
