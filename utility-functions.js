@@ -16,3 +16,11 @@ function ask(message) {
           return userNumber;
         }
  }
+function converCard(cardObject) {
+  let cardString = `<div class="card>"
+  <img class="card-img-top" src="${cardObject.src}">
+  <div class="card-body>"
+  <h3 class="card-title">${cardObject.title}</h3>
+  ${}
+  `
+}
