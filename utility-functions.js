@@ -23,7 +23,6 @@ function converCard(cardObject) {
   <h3 class="card-title">${cardObject.title}</h3>
   ${cardObject.summary}
   </div>
-  </div>
-  ` 
+  </div>`
   return cardString
 }
