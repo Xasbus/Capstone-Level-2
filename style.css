@@ -15,9 +15,9 @@ body {
   
 }
 
-.titlecolor {
-  color: rgb(204, 204, 0);
-}
+.titleColor {
+        color: rgb(204, 204, 0);
+      }
 .navbar1 {
   width: 25vw;
   font-family: monospace;
