@@ -15,17 +15,17 @@
     <script>
         function winCoupon() {
             message = "Guess my number.";
+            debugger;
             for (count = 0; count < 3; count++) {
-
 
                 winItem = ask(message);
                 userNumber = Number(winItem);
                 myNumber = 43;
                 doesMatch = userNumber === myNumber;
                 if (doesMatch) {
-                    message = "You guessed right!";
+                    output("WINNER!!! Promo Code: <b>AG34FR<b><br>");
                 } else {
-                    message = "You didn't guess right.";
+                    output("You didn't guess right.<br>");
 
                     isLess = userNumber < myNumber;
 
@@ -35,6 +35,7 @@
                     } else {
                         message += " Your number is greater than mine. Guess again.";
                     }
+
 
                 }
             }
@@ -112,13 +113,11 @@
         <ul id="winTag" class="list-group">
 
         </ul>
-
-        <script>
-        </script>
+        <hr>
     </main>
-    <hr />
+
     <footer>
-        <table>
+        <table width="100%">
             <tr>
                 <td>
                     <a href="#normalcontroller">DualSense wireless controller</a>

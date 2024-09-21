@@ -38,8 +38,8 @@ main {
 }
 
 footer {
-    text-align: center;
-    font-size: 13px;
+    text-align: center !important;
+    font-size: 15px;
 }
 
 a {
