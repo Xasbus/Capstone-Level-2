@@ -14,35 +14,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         function winCoupon() {
-            winItem = ask("Guess a number");
-            winTag.innerHTML =
-                winTag.innerHTML +
-                '<li class="list-group-item">' +
-                winItem +
-                "</li>";
-            userInput = prompt("Guess my number.");
-            userNumber = Number(userInput);
-            myNumber = 43;
-            doesMatch = userNumber === myNumber;
-            if (doesMatch) {
-                document.write("<p>You guessed right!</p>");
-            } else {
-                document.write("<p>You didn't guess right.<br></p>");
+            message = "Guess my number.";
+            for (count = 0; count < 3; count++) {
 
-                isLess = userNumber < myNumber;
 
-                if (isLess) {
-                    document.write("Your number is less than mine.");
-
+                winItem = ask(message);
+                userNumber = Number(winItem);
+                myNumber = 43;
+                doesMatch = userNumber === myNumber;
+                if (doesMatch) {
+                    message = "You guessed right!";
                 } else {
-                    document.write("Your number is greater than mine.");
+                    message = "You didn't guess right.";
+
+                    isLess = userNumber < myNumber;
+
+                    if (isLess) {
+                        message += " Your number is less than mine. Guess again.";
+
+                    } else {
+                        message += " Your number is greater than mine. Guess again.";
+                    }
+
                 }
             }
-            winTag.innerHTML =
-                winTag.innerHTML +
-                '<li class="list-group-item">' +
-                winItem +
-                "</li>";
         }
     </script>
 </head>
