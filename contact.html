@@ -56,15 +56,20 @@
                     <button>Submit</button>
                 </p>
             </form>
-
+            <h3>Submit an appointment by phone </h3>
             <form onsubmit="numberProcess()">
                 Schedule a phone appointment:<br>
-                <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneInput">
-
+                <p>
+                    <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneInput">
+                </p>
                 <input type="submit">
             </form>
-            <form>
-                <input type="datetime-local">
+            <br>
+            <form onsubmit="dateProcess()">
+                Select date and time:<br>
+                <p>
+                    <input type="datetime-local">
+                </p>
                 <input type="submit">
             </form>
 
