@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Playstation Unofficial Test Code</title>
     <script src="utility-functions.js"></script>
+    <script src="contact-forms.js"></script>
     <style>
         .textAreaSize {
             width: 100%;
@@ -25,7 +26,7 @@
                     <div class="col"><a href="consoles.html">Consoles</a></div>
                     <div class="col"><a href="games.html">Games</a></div>
                     <div class="col"><a href="accessories.html">Accessories</a></div>
-                    <div class="col"><a href="signin.html">SIGN IN</a></div>
+                    <div class="col"><a href="signin.html">Sign In</a></div>
                     <div class="col"><a href="about.html">About</a></div>
                     <div class="col"><a href="contact.html" class="nav-link active">Contact</a></div>
                 </div>
@@ -49,11 +50,16 @@
             <form>
 
                 <h3>Contact Customer Service</h3>
-                <p>Enter Your Email:<br /><input id="emailSize" /></p>
-                <p>Summary of Issue:<br /><textarea class="textAreaSize"></textarea></p>
-                <p>
-                    <button>Submit</button>
-                </p>
+
+                <form onsubmit="emailProcess(event)">
+                    Email: <br>
+                    <input id="emailSize" required name="myPassword" type="password" placeholder="Enter Your Email" />
+                    <p>Summary of Issue:<br /><input id="emailSize" type="text" placeholder="Text Here"></p>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+                <div id="outputTag"></div>
 
                 <script>
                 </script>

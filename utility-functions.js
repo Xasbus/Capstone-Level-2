@@ -3,7 +3,7 @@ function display(message) {
 }
 
 function output(message) {
-    window.outputTag.innerHTML = window.outputTag.innerHTML + message;
+    window.outputTag.innerHTML += message;
 }
 
 function ask(message) {
