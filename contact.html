@@ -53,15 +53,30 @@
         <form onSubmit="emailProcess(event)">
             Email: <br>
             <input id="emailSize" required name="myEmail" type="email" placeholder="Enter Your Email" />
-            <p>Summary of Issue:<br /><input id="textAreaSize" type="text" placeholder="Text Here"></p>
+            <p>Summary of Issue:<br /><input id="emailSize" type="text" placeholder="Text Here"></p>
             <p>
-                <button type="submit">Submit</button>
+                <input type="submit">
             </p>
+        </form>
+
+        <h3>Submit an appointment by phone </h3>
+        <form onSubmit="numberProcess(event)">
+            Schedule a phone appointment:<br>
+            <p>
+                <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneInput">
+            </p>
+            <input type="submit">
+        </form>
+        <br>
+        <form onSubmit="dateProcess(event)">
+            Select date and time:<br>
+            <p>
+                <input type="datetime-local">
+            </p>
+            <input type="submit">
         </form>
         <div id="outputTag"></div>
 
-        <script>
-        </script>
     </main>
 
     <hr />
