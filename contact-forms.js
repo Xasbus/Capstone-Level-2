@@ -14,3 +14,7 @@ function dateProcess(event) {
     const dateValue = dateInput.value;
     output(` We have received your appointment. See you there! <br>`)
 }
+
+function output(message) {
+    window.outputTag.innerHTML += message;
+}
