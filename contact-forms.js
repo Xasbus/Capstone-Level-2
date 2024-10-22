@@ -1,4 +1,5 @@
 function emailProcess(event) {
+    debugger;
     event.preventDefault();
     const form = event.target;
     const passwordInput = form[0];
@@ -11,7 +12,7 @@ function numberProcess(event) {
     const phoneForm = event.target;
     const phoneInput = phoneForm[0];
     const phoneValue = phoneInput.value;
-    output(` Your phone number is recorded. Please choose a date and time.<br>`)
+    output(` Your phone number is recorded. Please choose a date and time.<br>`);
 }
 
 function dateProcess(event) {
@@ -19,9 +20,5 @@ function dateProcess(event) {
     const dateForm = event.target;
     const dateInput = dateForm[0];
     const dateValue = dateInput.value;
-    output(` We have received your appointment. See you there! <br>`)
-}
-
-function output(message) {
-    window.outputTag.innerHTML += message;
+    output(` We have received your appointment. See you there! <br>`);
 }
