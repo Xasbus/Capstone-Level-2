@@ -35,7 +35,7 @@ main {
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
-    background-color: rgba(30, 30, 30, 0.7);
+    background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));
 }
 
 footer {
