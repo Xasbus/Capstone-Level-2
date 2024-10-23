@@ -39,16 +39,17 @@
         <h3>Log In</h3>
         <div class="formClass">
             <form>
-                Email Address:<br /><input id="emailSize" />
-                <p>Password:<br /><input id="emailSize" /></p>
+                Email Address:<br /><input type="email" id="emailSize" />
+                <p>Password:<br /><input type="password" id="emailSize" /></p>
                 <p>
-                    <button>Log In</button>
+                    <button type="button">Log In</button>
                 </p>
                 <h3>Sign Up</h3>
-                <p>Email Address:<br /><input id="emailSize" /></p>
-                <p>Password:<br /><input id="emailSize" /></p>
-                <p>Repeat Password:<br /><input id="emailSize" /></p>
-                <p>Comments:<br /><textarea class="textAreaSize"></textarea></p>
+                <p>Email Address:<br /><input type="email" id="emailSize" /></p>
+                <p>Password:<br /><input type="password" id="emailSize" /></p>
+                <p>Repeat Password:<br /><input type="password" id="emailSize" /></p>
+                <p>Comments:<br /><input type="text" class="textAreaSize"></input>
+                </p>
                 <script>
                     display("Would you like to receive email notifications?");
                 </script>
@@ -57,7 +58,7 @@
                 <input id="yesButton" name="checkButton" type="radio"><br>
                 <label for="noButton">NO</label>
                 <input id="noButton" name="checkButton" type="radio"><br>
-                <button>Sign Up</button>
+                <button type="button">Sign Up</button>
             </form>
         </div>
         <hr>
