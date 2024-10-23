@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: rgb(30, 30, 30);
     color: rgb(180, 180, 180);
+    background-image: url(PS5-background-image.png);
 }
 
 .titleColor {
@@ -35,6 +35,7 @@ main {
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
+    background-color: rgba(30, 30, 30, 0.7);
 }
 
 footer {
