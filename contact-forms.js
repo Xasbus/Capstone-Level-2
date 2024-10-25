@@ -1,5 +1,4 @@
 function emailProcess(event) {
-    debugger;
     event.preventDefault();
     const form = event.target;
     const passwordInput = form[0];
