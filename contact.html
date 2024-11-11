@@ -74,7 +74,7 @@
       <section>
         <h3>Contact Customer Service</h3>
 
-        <form onSubmit="emailProcess(event)">
+        <form onSubmit="handleEmail(event)">
           Email: <br />
           <input
             id="emailSize"
@@ -98,7 +98,7 @@
 
       <section>
         <h3>Submit an appointment by phone</h3>
-        <form onSubmit="numberProcess(event)">
+        <form onSubmit="handlePhone(event)">
           Schedule a phone appointment:<br />
           <p>
             <input
@@ -111,7 +111,7 @@
           <input type="submit" />
         </form>
         <br />
-        <form onSubmit="dateProcess(event)">
+        <form onSubmit="handleDate(event)">
           Select date and time:<br />
           <p>
             <input type="datetime-local" />

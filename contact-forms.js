@@ -1,4 +1,4 @@
-function emailProcess(event) {
+function handleEmail(event) {
   event.preventDefault();
   const form = event.target;
   const passwordInput = form[0];
@@ -8,7 +8,7 @@ function emailProcess(event) {
   promise.then(parseResponse);
 }
 
-function numberProcess(event) {
+function handlePhone(event) {
   event.preventDefault();
   const phoneForm = event.target;
   const phoneInput = phoneForm[0];
@@ -18,7 +18,7 @@ function numberProcess(event) {
   promise.then(parseResponse);
 }
 
-function dateProcess(event) {
+function handleDate(event) {
   event.preventDefault();
   const dateForm = event.target;
   const dateInput = dateForm[0];
